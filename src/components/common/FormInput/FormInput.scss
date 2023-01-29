@@ -1,0 +1,27 @@
+@import "../../../assets/scss/variables.scss";
+
+.IndexLabel{
+    font-size: 1.2rem;
+    font-family: 'OpenSans-Regular';
+    color: color('text-black');
+}
+
+.IndexDataInput{
+    font-size: 1.2rem !important;
+    font-family: 'OpenSans-Regular';
+}
+
+.IndexDataInput:disabled{
+    cursor: not-allowed;
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.InputFieldFocus{
+    &:focus{
+        box-shadow: none !important;
+    }
+    &:not(.is-invalid):focus{
+        border-color: color('primary') !important;
+    }
+}

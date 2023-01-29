@@ -1,0 +1,26 @@
+$colors: (
+    primary: #0072C6,
+    primary-hover:#397aeb,
+    primary-border:#4885ed,
+    text-white: #fff,
+    text-black:#000,
+    bg-white:#fff,
+    bg-light-grey: #F8F8F8,
+    light-grey:#eee,
+    grey-text :#606060,
+    grey-border:#CCCCCC,
+    orange-primary:#F79657,
+    orange-dark:#F86600,
+    green-icon:#2BC262,
+    red-text: #D53D3D,
+    dark-grey-text:#3A3A3A,
+    dark-yellow: #AD6503,
+    primary-button-hover: #005EA3,
+    selected-item: #EBF4FB,
+    primary-button-outlined-hover: #E5EEF5,
+    secondary-button-outlined-hover: #F0F0F0
+);
+
+@function color($name) {
+    @return map-get($colors, $name)
+}
